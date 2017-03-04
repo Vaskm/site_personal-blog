@@ -1,0 +1,89 @@
+@import fonts
+
+.error-block
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    text-transform: uppercase
+
+    .form-control
+        border-radius: 0
+
+.number
+    font-family: MontserratExtraBold
+    font-size: 300px
+    margin-bottom: -40px
+
+.nothing-found
+    position: absolute
+    width: 100%
+    top: 224px
+    left: 0
+    background: #ffffff
+    font-family: HindRegular
+    font-size: 21px
+    text-align: center
+    line-height: 30px
+
+.error-block_form
+    text-align: center
+    width: 100%
+    display: flex
+    width: 80%
+    justify-content: center
+
+.error-block_input
+    width: 60% !important
+    height: 50px !important
+    border: 1px solid #cccccc
+    border-right: none
+    font-family: HindRegular
+    font-size: 14px
+    color: #363636
+
+.error-block_submit
+    width: 170px !important
+    height: 50px !important
+    background: #363636
+    font-family: MontserratBold
+    font-size: 14px
+    color: #ffffff
+
+.error-block_header
+    font-family: MontserratBold
+    font-size: 30px
+    text-transform: none
+
+.error-block_article
+    font-family: MontserratBold
+    font-size: 14px
+    color: #999999
+    text-transform: none
+    text-align: center
+    padding: 10px
+
+.error-block_homelink
+    margin-top: 20px
+    text-decoration: none
+    font-family: MontserratRegular
+    text-transform: uppercase
+    font-size: 14px
+    color: #363636
+
+    &:hover
+        text-decoration: none
+
+.error-block_fa
+    margin-right: 10px
+
+@media screen and (max-width: 768px)
+    .number
+        font-size: 150px
+
+    .nothing-found
+        top: 109px
+        font-size: 16px
+        line-height: 20px

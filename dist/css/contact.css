@@ -1,0 +1,36 @@
+.map {
+  width: 100%;
+  height: 300px;
+  background: url("../images/map.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.detail_title {
+  margin-bottom: 40px;
+}
+
+.detail_article {
+  margin: 0 30px;
+}
+
+.contact-info {
+  display: block;
+  margin: 0 20px;
+}
+.contact-info i {
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-info i {
+    text-align: center;
+  }
+}
+.detail_content a {
+  color: #222;
+  text-decoration: underline;
+}
+.detail_content a:hover {
+  text-decoration: none;
+}

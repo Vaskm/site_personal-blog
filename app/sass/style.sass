@@ -1,0 +1,443 @@
+@import '_fonts'
+// Header
+.navbar-header 
+	float: none
+@media screen and (max-width: 768px)
+	.navbar-brand
+		margin: 5px 0 0 10%
+.navbar-toggle 
+	display: block
+	float: left
+.navbar-collapse 
+	border-top: 1px solid transparent
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+.navbar-collapse.collapse 
+	display: none!important
+.navbar-nav 
+	float: none!important
+	margin: 7.5px -15px
+.navbar-nav
+	width: 100%   
+.navbar-nav li 
+	float: none
+	padding: 0 0 0 10px
+	&:hover
+		background: #000
+.navbar-nav li a 
+	padding: 10px 0
+	
+.collapse.in 
+	display: block!important
+.header_navbar
+	border: none
+	margin-bottom: 0
+.head_nav_toggle
+	transition: .1s    
+.header_logo
+	display: block
+	margin: 6px auto
+	img
+		margin: 0 auto
+.header_bg
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	min-height: 345px
+	background: #222
+	box-shadow: 0 0 5px 0 #000
+.carousel-inner
+	background: #000
+.head_nav_toggle
+	border: none
+	border-radius: 0
+.social
+	position: absolute
+	top: 20px
+	right: 0
+	a
+		box-shadow: inset 0 0 5px 0 #000
+		overflow: hidden
+@media screen and(max-width: 600px)
+
+	.social
+		top: 70px
+		right: -50px
+		a
+			display: block
+			border: none!important
+			padding: 10px 10px
+	.container-fluid
+		padding: 0 10px 0 5px
+.header
+	margin: 0 50px
+@media screen and (max-width: 768px)
+	.header
+		margin: 0 30px 0 0
+
+.header-article
+	color: #ffffff
+	display: block
+	text-align: left
+	left: 30px
+
+	h1
+		font-family: Hind
+		font-weight: 700
+		font-size: 32px
+		text-transform: uppercase
+		letter-spacing: 5px
+@media screen and (max-width: 768px)
+	.header-article h1
+		font-size: 20px
+.topic
+	font-family: Hind
+	font-weight: 600
+	font-size: 14px
+	letter-spacing: 2px
+@media screen and (max-width: 480px)
+	.carousel-caption
+		top: -10px
+	.header-article h1
+		font-size: 16px
+		margin-top: 10px
+	.social
+		top: 0
+		a
+			margin: 0!important
+	.subscribe-form input
+		font-size: 12px!important
+
+@media screen and (max-width: 360px)
+	.header-article h1
+		font-size: 12px
+	.topic
+		font-size: 10px
+
+
+
+.social
+	a
+		padding: 10px 20px
+		margin: 0
+		border-left: 1px solid #3c3c3c
+		transition: .1s
+		&:last-child
+			border-right: 1px solid #3c3c3c
+		&:hover
+			background: lighten(#3c3c3c, 1%)
+
+// Carousel
+.shadowed
+	box-shadow: 0 0 10px 0 #000
+
+.carousel-indicators
+	width: auto
+	right: 30px
+	left: auto
+	top: 35%
+	.active
+		margin: auto
+		margin-top: 20px
+	li
+		display: block
+		margin-top: 20px
+@media screen and (max-width: 768px)
+	.carousel-indicators
+		display: none
+// End of header
+// Subscribe form
+.subscribe-container
+	margin: 0 50px
+.subscribe-row
+	display: flex
+	justify-content: space-between
+	width: 100%
+	text-align: center
+.subscribe-form
+	display: flex
+	background-color: #f7f7f7
+	padding: 15px 0
+	input
+		font-family: Hind
+		font-weight: 300
+		font-size: 14px
+		text-transform: uppercase
+	input,button, span
+		margin: 0 
+	input, button
+		box-shadow: 0 0 0 rgba(232, 232, 232, 0.7)
+		border: 1px solid rgba(221, 221, 221, 0.7)
+		height: 50px
+	button
+		background-color: #212121
+		font-family: Hind
+		font-weight: 500
+		font-size: 14px
+		color: #ffffff
+		text-transform: uppercase
+.subscribe_title
+	font-family: MontserratExtraBold
+	letter-spacing: 1px
+	font-size: 18px
+	text-transform: uppercase
+	text-align: left
+	background: #fff
+
+@media screen and(max-width: 768px)
+	.subscribe-container
+		margin: 50px 0 0
+		padding: 0
+	.subscribe-row
+		display: block
+		margin: 0 auto 
+	.subscribe_title
+		text-align: center
+		margin-bottom: 10px!important
+
+
+
+// Content
+.content-container
+	padding: 0 50px
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+.content-block
+	border: 1px solid rgba(221, 221, 221, 0.15)
+	box-shadow: 0 0 20px 0 #eee
+	padding: 15px
+	overflow: hidden
+	margin: 14px 0
+// content-block--simple(1-1)
+.content
+	margin-top: 70px
+
+.b-topic
+	margin-top: 58px
+.b-topic, .b-date
+	margin: 4px 0
+	color: #999999
+	font-family: Hind
+	font-size: 14px
+	font-weight: 400
+	text-transform: uppercase
+.b-title
+	color: #212121
+	font-family: MontserratExtraBold
+	font-size: 20px
+	text-transform: uppercase
+.b-article
+	margin-top: 16px
+	color: #464646
+	font-family: Hind
+	font-size: 15px
+	font-weight: 300
+.b-btn
+	border-left: 1px solid #d7d7d7
+	border-right: 1px solid #d7d7d7
+	background: transparent
+	display: block
+	width: auto
+	margin: 37px auto 0
+	color: #212121
+	font-family: Hind
+	font-size: 14px
+	font-weight: 500
+	text-transform: uppercase
+.b-footer
+	display: flex
+	justify-content: space-between
+	margin: 50px 0 0 0
+.b-footer_p
+	font-family: Hind
+	font-size: 12px
+	color: #999999
+	text-transform: uppercase
+	margin-left: 5px
+.b-social a
+	margin: 5px
+	color: #000
+@media screen and (max-width: 480px)
+	.b-social>a
+		margin: 0
+	.b-footer_p
+		font-size: 10px
+	.content-container
+		padding: 0
+// End of content-block--simple
+
+// content-block post-img
+.b-img
+	background: url('../images/img-gallery-3.jpg') center center no-repeat
+	background-size: cover
+	width: 100%
+	height: 200px
+	margin: 0 0 50px 0
+	position: relative
+	cursor: pointer
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(255,255,255, .1)
+		transition: .2s
+	&:hover:after
+		background: transparent
+
+// content-block post-quote
+.post-quote
+	background-color: #212429
+.text-white
+	color: #ffffff
+	font-family: Hind
+	font-size: 15px
+	font-weight: 300
+	letter-spacing: 1px
+.quote-autor
+	color: #999999
+	font-family: Hind
+	font-size: 14px
+	font-weight: 400
+	text-transform: uppercase
+
+
+// content-block post-gallery
+.row-grid-gallery
+	display: flex
+	flex-wrap: wrap
+.gallery-img
+	background: url('../images/img-gallery-3.jpg') center center no-repeat
+	background-size: cover
+	margin: 5px auto
+	width: 48%
+	height: 100px
+	cursor: pointer
+	display: block
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(255,255,255, .1)
+		transition: .2s
+	&:hover:after
+		background: transparent
+@media screen and(max-width: 480px)
+	.gallery-img
+		width: 100%
+// content-post-whitespase
+.post-whitespase
+	img
+		width: 100%
+
+// content-block post-audio
+.play-btn
+	display: flex
+	justify-content: center
+	margin-top: 30px
+
+// content-post-video
+.b-video
+	position: relative
+	margin: -10px
+	img
+		width: 98%
+		display: block
+		border: none
+		margin: 0 auto 30px
+.b-video_play-btn
+	position: absolute
+	top: 28%
+	left: 43%
+	background: #ddd
+	padding: 14px 12px 14px 14px
+	border-radius: 50%
+	cursor: pointer
+	&:hover
+		background: #aaa
+
+// content-post-link
+.b-link
+	padding: 40px 10px
+	background: #212429
+	a
+		color: #fff
+		text-decoration: underline
+
+		&:hover
+			text-decoration: none
+.dark-square
+	width: 100%
+	height: 200px
+	margin-top: 30px
+	background: #212429
+
+// footer
+.footer
+	background: #212429
+	padding: 0 50px 60px
+	p
+		color: #f9f9fb
+		font-family: Hind
+		font-size: 15px
+		font-weight: 300
+	hr
+		height: 1px
+		color: #ccc
+		opacity: 0.4
+.footer_title
+	margin: 60px	
+	font-family: MontserratExtraBold
+	font-size: 16px
+	text-transform: uppercase
+	color: #f7f7f7
+	margin-bottom: 30px
+.footer_col
+	color: #fff
+.footer_sign
+	width: 100%
+.tweet-author
+	display: block
+	margin-bottom: 20px
+	color: #f6f6fb
+.padding-right-0
+	padding-right: 0	
+
+.instagram-img
+	display: inline-block
+	background: #ccc
+	width: 32%
+	height: 70px
+	transition: .1s
+	cursor: pointer
+	box-shadow: 0 0 5px 0 #000
+	&:hover
+		transform: scale(1.05)
+		background: #eee
+		box-shadow: 0 0 15px 0 #000
+.footer_copyright
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	background: #17191c
+.copyright, .terms-policy, .disclaimer
+	opacity: 0.4
+	color: #ffffff
+	font-family: Hind
+	font-size: 14px
+	font-weight: 300
+	text-transform: uppercase
+	padding: 0 20px
+.terms-policy:hover, .disclaimer:hover
+	text-decoration: none
+
+.terms-policy
+	border-left: 1px solid rgba(255,255,255, .4)
+	border-right: 1px solid rgba(255,255,255, .4)
